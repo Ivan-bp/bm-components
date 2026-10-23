@@ -1,52 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/corazon_no_fondo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!-- Metadatos esenciales para que Canva reconozca la web -->
+    <meta charset="utf-8">
     <title>BM Components</title>
-    <meta name="description" content="Components">
-    <link rel="canonical" href="https://ivan-bp.github.io/bm-components">
-    <meta name="apple-mobile-web-app-title" content="Components">
-    <meta name="application-name" content="Components">
-    <meta name="msapplication-TileColor" content="#3d3f41">
-    <meta name="msapplication-TileImage" content="https://ivan-bp.github.io/bm-components/corazon_no_fondo.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="fb:app_id" content="216345632072928">
-    <meta property="og:site_name" content="Components">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ivan-bp.github.io/bm-components">
-    <meta property="og:title" content="BM Components">
-    <meta property="og:description" content="BM Components">
-    <meta property="og:image" content="https://ivan-bp.github.io/bm-components/corazon_no_fondo.png">
-    <meta property="og:image:alt" content="BM Components">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="Components">
-    <meta name="twitter:title" content="BM Components">
-    <meta name="twitter:description" content="BM Components">
-    <meta name="twitter:image" content="https://ivan-bp.github.io/bm-components/corazon_no_fondo.png">
-    <meta name="twitter:image:alt" content="BM Components">
-    <!-- Una imagen miniatura de tu app ayuda a que Canva genere la tarjeta antes de cargar el iFrame -->
-    <meta property="og:image" content="https://ivan-bp.github.io/bm-components/corazon_no_fondo.png">
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/corazon_no_fondo.png">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <script type="text/javascript">
+      // Truco para Single Page Apps en GitHub Pages
+      var pathSegmentsToKeep = 1; // 1 porque tu repo es /bm-components/
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=' +
+        l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
